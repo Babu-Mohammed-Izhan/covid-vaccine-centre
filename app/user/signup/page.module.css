@@ -3,7 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem;
+  width: 80%;
+  margin: auto;
+  min-height: 80vh;
+}
+
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .description {

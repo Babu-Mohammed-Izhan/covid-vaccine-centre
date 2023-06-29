@@ -3,15 +3,17 @@ import { Form, Input, Button } from "antd";
 import { useRouter } from "next/navigation";
 import styles from "./page.module.css";
 
-const onFinish = (values) => {
-  console.log("Success:", values);
-};
-const onFinishFailed = (errorInfo) => {
-  console.log("Failed:", errorInfo);
-};
-
 export default function UserLogin() {
   const router = useRouter();
+
+  const onFinish = (values) => {
+    console.log("Success:", values);
+    router.push("/user/vaccine-centre");
+  };
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
+
   return (
     <div className={styles.main}>
       <h1>User Login</h1>
